@@ -1,0 +1,47 @@
+ul {
+    list-style: none;
+    li.ball {
+        width: 25px;
+        height: 25px;
+        border: 1px dashed #acacac;
+        border-radius: 100%;
+        margin-left: 5px;
+        text-align: center;
+        vertical-align: middle;
+        color: white;
+        &.ball-fill {
+            border: 0;
+            &.ball-check { background-color: seagreen; }
+            &.ball-times { background-color: tomato; }
+            &.ball-pause { background-color: dodgerblue; }
+        }
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#state-label {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #333;
+}
+
+#timer-container {
+    &.timer-pomodoro {
+        background: linear-gradient(45deg, lightgreen, seagreen);
+    }
+    &.timer-break {
+        background: linear-gradient(45deg, deepskyblue, dodgerblue);
+    }
+    &.timer-paused {
+        background: linear-gradient(45deg, orange, gold);
+    }
+    &.timer-idle {
+        background: linear-gradient(45deg, tomato, darkorange);
+    }
+}
